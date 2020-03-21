@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
  * 通过{@link ObjectProvider} 进行依赖查找
  * Created by lasia on 2020/3/17.
  */
-public class ObjectProviderDemo {
+public class ObjectProviderDemo {   //@Configuration非必须注解
     public static void main(String args[]) {
         //创建 beanFactory 容器
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
@@ -29,7 +29,8 @@ public class ObjectProviderDemo {
     }
 
     private static void lookupByObjectProvider(AnnotationConfigApplicationContext applicationContext) {
-        applicationContext.getBeanProvider();
+        ObjectProvider<String> objectProvider = applicationContext.getBeanProvider(String.class);
+        System.out.println(objectProvider.getObject());
     }
 
 }
