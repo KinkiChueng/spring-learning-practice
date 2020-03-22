@@ -18,10 +18,11 @@
             <artifactId>spring-context</artifactId>
             <version>5.2.2.RELEASE</version>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.2.2.RELEASE</version>
+            <groupId>java-beans-demo</groupId>
+            <artifactId>ioc-container-overview</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
